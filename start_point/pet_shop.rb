@@ -24,11 +24,24 @@ return pet_shop[:pets].count()
 end
 
 def pets_by_breed(pet_shop, breed)
-  new_array = []
-  for pets in pet_shop
-     if [:breed] == breed
-       new_array = new_array.push(breed)
-     end
-     return new_array
-   end
- end
+breeds_array = []
+  for pet in pet_shop[:pets]
+    if breed == pet[:breed]
+    breeds_array << pet
+    end
+  end
+return breeds_array
+end
+
+def find_pet_by_name (pet_shop, pet_name)
+  for pet in pet_shop[:pets]
+    if pet_name == pet[:name]
+      return pet
+    end
+  end
+  return nil
+end
+
+def customer_cash(array)
+
+end
