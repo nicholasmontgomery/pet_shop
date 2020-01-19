@@ -44,7 +44,7 @@ end
 
 def remove_pet_by_name(pet_shop, pet_name)
   for pet in pet_shop[:pets]
-    if pet_name === pet[:name]
+    if pet_name == pet[:name]
     pet_shop[:pets].delete(pet)
     end
   end
@@ -67,7 +67,7 @@ def customer_pet_count(array)
 end
 
 def add_pet_to_customer(customer, new_pet)
-  customer[:pets].push(new_pet[1])
+  customer[:pets].push(new_pet)
 end
 
 def customer_can_afford_pet(customer, new_pet)
