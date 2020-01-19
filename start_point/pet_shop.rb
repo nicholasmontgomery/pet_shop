@@ -57,3 +57,15 @@ end
 def customer_cash(array)
   return array[:cash]
 end
+
+def remove_customer_cash(customer, removed_cash)
+  customer[:cash] -= removed_cash
+end
+
+def customer_pet_count(array)
+  return array[:pets].count
+end
+
+def add_pet_to_customer(customer, new_pet)
+  customer[:pets] += new_pet
+end
